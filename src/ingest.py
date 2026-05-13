@@ -49,8 +49,8 @@ def ingest_pdf():
         # 2. Dividir em chunks (otimizado)
         print("   ✂️  Dividindo em chunks...")
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=800,       # 👈 reduzido
-            chunk_overlap=100,    # 👈 reduzido
+            chunk_size=1000,       
+            chunk_overlap=150,    
             length_function=len,
             is_separator_regex=False,
         )
